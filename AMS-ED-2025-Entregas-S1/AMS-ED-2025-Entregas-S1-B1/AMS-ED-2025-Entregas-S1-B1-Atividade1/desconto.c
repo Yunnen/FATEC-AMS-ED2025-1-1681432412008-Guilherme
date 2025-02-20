@@ -54,7 +54,7 @@ int main() {
 
     aplicarDesconto(ptrPreco, ptrDesconto, ptrNovoPreco);
 
-    printf("\nMeus parabéns! Você realizou a compra de R$ %.2f, aplicando o desconto de %i%% você pagou apenas R$ %.2f. 🤑\n " , *ptrPreco, desconto, *ptrNovoPreco);
+    printf("\nMeus parabéns! Você realizou a compra de R$ %.2f, aplicando o desconto de %i%% você pagou apenas R$ %.2f. 🤑\n " , *ptrPreco, *ptrDesconto, *ptrNovoPreco);
     printf("\nNós agredecemos a preferencia! ≧◠‿◠≦✌ ");
     
 }
