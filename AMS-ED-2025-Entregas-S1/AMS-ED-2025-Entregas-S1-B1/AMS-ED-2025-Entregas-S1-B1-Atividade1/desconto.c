@@ -56,4 +56,3 @@ int main() {
     printf("\nNós agredecemos a preferencia! ≧◠‿◠≦✌ ");
     
 }
-
