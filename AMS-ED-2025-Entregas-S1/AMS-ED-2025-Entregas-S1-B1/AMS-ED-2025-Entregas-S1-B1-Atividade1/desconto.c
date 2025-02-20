@@ -10,6 +10,7 @@
 
 void aplicarDesconto(double *preco, int *desconto, double *novoPreco) {
     
+    //Meu grande filtro contra erros do usario! (͠≖ ͜ʖ͠≖)👌
     if(*preco <= 0){
         printf("Eita! Parece que você colocou o valor de R$ %.2f (╥﹏╥), um valor negativo...que tal tentar novamente?\n ", *preco);
         scanf("%lf", &*preco);
