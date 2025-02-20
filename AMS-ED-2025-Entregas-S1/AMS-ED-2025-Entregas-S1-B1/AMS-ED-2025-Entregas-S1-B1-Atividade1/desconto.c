@@ -26,12 +26,9 @@ void aplicarDesconto(double *preco, int *desconto, double *novoPreco) {
         scanf("%i", &*desconto); 
         aplicarDesconto(preco, desconto, novoPreco); 
     }else{
-    
     double percentualDesconto = *desconto / 100.0; 
     *novoPreco = *preco - (*preco * percentualDesconto); 
-    
     }
-    
 }
 
 int main() {
