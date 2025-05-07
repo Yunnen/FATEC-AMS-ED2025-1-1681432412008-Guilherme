@@ -1,0 +1,45 @@
+/*------------------------------------------------------------------------*/
+/*   FATEC-São Caetano do Sul                 Estrutura de Dados          */
+/*                         Guilherme Gallo Migliorini                     */
+/*            Objetivo: Realiza um Bubblesort                             */
+/*             Paradigama: - Utilizar entrada de n numeros e organizar    */
+/*                            em ordem crescente                          */
+/*                                                         Data:07/05/2025*/
+/*------------------------------------------------------------------------*/ 
+
+#include <stdio.h>
+
+int main() {
+    int n, i, j, temp;
+
+  
+    printf("Digite a quantidade de numeros: ");
+    scanf("%d", &n);
+
+    int vetor[n];
+
+  
+    printf("Digite os %d numeros:\n", n);
+    for (i = 0; i < n; i++) {
+        scanf("%d", &vetor[i]);
+    }
+
+   
+    for (i = 0; i < n - 1; i++) {
+        for (j = 0; j < n - i - 1; j++) {
+            if (vetor[j] > vetor[j + 1]) {
+                temp = vetor[j];
+                vetor[j] = vetor[j + 1];
+                vetor[j + 1] = temp;
+            }
+        }
+    }
+
+    printf("Vetor ordenado em ordem crescente:\n");
+    for (i = 0; i < n; i++) {
+        printf("%d ", vetor[i]);
+    }
+
+    printf("\n");
+    return 0;
+}
